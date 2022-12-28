@@ -65,6 +65,40 @@ public class Main {
     }
     public static void task4(){
         System.out.println("ЗАДАЧА №4");
+        byte machinePerformance=16;
+        System.out.println("Производительность машины "+machinePerformance+" бутылок шт");
+        byte productionTime=2;
+        System.out.println("Время на производство "+productionTime+" мин");
+        byte oneMinute = (byte)(machinePerformance/productionTime);
+        System.out.println("За одну минуту машина производит "+oneMinute+" бутылок");
+        byte twentyMinutes =20;
+        System.out.println(twentyMinutes+" минут");
+        short totalTwentyMinutes=(short) (oneMinute*twentyMinutes);
+        System.out.println("За "+twentyMinutes+" минут машина произвела "+totalTwentyMinutes+ " штук бутылок");
+        byte oneHour =60;
+        System.out.println("Один час это "+oneHour+" минут");
+        short producInOneHour= (short) (oneMinute*oneHour);
+        System.out.println("За один час машина производит "+producInOneHour+" бутылок");
+        short day=24;
+        System.out.println("В сутках "+day+" часа");
+        System.out.println("Сколько производит за "+day+ " часа бутылок в шт?");
+        short totalDay= (short) (day*producInOneHour);
+        System.out.println("За "+day+ " часа машина произвела "+totalDay+ " штук бутылок");
+        short threeDays=3;
+        System.out.println("Сколько производит за "+threeDays+ " дня бутылок в шт?");
+        int totalThreeDays=(threeDays*totalDay);
+        System.out.println("За "+threeDays+ " дня машина произвела "+totalThreeDays+ " штук бутылок");
+        byte month = 30;
+        System.out.println("В месяце "+month+ " дней");
+        System.out.println("Сколько производит за "+month+ " дней бутылок в шт?");
+        int totalMonth=(totalDay*month);
+        System.out.println("За "+month+ " дней машина произвела "+totalMonth+ " штук бутылок");
+
+
+
+
+
+
     }
 
 }
