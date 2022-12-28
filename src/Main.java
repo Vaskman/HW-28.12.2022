@@ -5,6 +5,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
 
     }
 
@@ -93,12 +94,26 @@ public class Main {
         System.out.println("Сколько производит за "+month+ " дней бутылок в шт?");
         int totalMonth=(totalDay*month);
         System.out.println("За "+month+ " дней машина произвела "+totalMonth+ " штук бутылок");
-
-
-
+    }
+    public static void task5() {
+        System.out.println("ЗАДАЧА №5");
+        byte whitePaint =2;
+        System.out.println("Банки белой краски "+whitePaint+" шт.на один класс");
+        byte brownPaint=4;
+        System.out.println("Банки коричневой краски "+brownPaint+" шт.на один класс");
+        byte paintСansPerСlass=(byte) (whitePaint+brownPaint);
+        System.out.println("На один класс уходит "+paintСansPerСlass+" банок краски");
+        byte totalPurchasedCansOfPaint=120;
+        System.out.println("Всего куплено "+totalPurchasedCansOfPaint+" банок краски");
+        byte howManyClasses=(byte) (totalPurchasedCansOfPaint/paintСansPerСlass);
+        System.out.println("Всего классов в школе "+howManyClasses+" шт");
+        byte allWhite = (byte) (whitePaint*howManyClasses);
+        System.out.println("Всего белой краски потрачено "+allWhite+" банок");
+        byte allBrown=(byte) (brownPaint*howManyClasses);
+        System.out.println("Всего коричневой краски потрачено "+allBrown+" банок");
+        System.out.println("В школе, где "+howManyClasses+" классов, нужно "+ allWhite+" банок белой краски и "+allBrown+ " банок коричневой краски");
 
 
 
     }
-
 }
