@@ -6,6 +6,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
 
@@ -112,8 +113,15 @@ public class Main {
         byte allBrown=(byte) (brownPaint*howManyClasses);
         System.out.println("Всего коричневой краски потрачено "+allBrown+" банок");
         System.out.println("В школе, где "+howManyClasses+" классов, нужно "+ allWhite+" банок белой краски и "+allBrown+ " банок коричневой краски");
-
-
+    }
+    public static void task6() {
+        System.out.println("ЗАДАЧА №6");
+        byte bananas = 5;
+        System.out.println("Бананов "+bananas+" шт");
+        byte onebanana= 80;
+        System.out.println("Один Банан = "+onebanana+" грамм");
+        byte bananasGrams=(byte) (bananas*onebanana);
+        System.out.println("Все бабаны в граммах = "+bananasGrams+" грамм");
 
     }
 }
