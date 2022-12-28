@@ -119,9 +119,31 @@ public class Main {
         byte bananas = 5;
         System.out.println("Бананов "+bananas+" шт");
         byte onebanana= 80;
-        System.out.println("Один Банан = "+onebanana+" грамм");
-        byte bananasGrams=(byte) (bananas*onebanana);
-        System.out.println("Все бабаны в граммах = "+bananasGrams+" грамм");
+        System.out.println("Один Банан = "+onebanana+" г.");
+        short bananasGrams=(short) (bananas*onebanana);
+        System.out.println("Все бабаны в граммах = "+bananasGrams+" г.");
+        short milk = 200;
+        System.out.println("Молока "+milk+ "мл");
+        short oneMilk=(105);
+        System.out.println("В 100 мл молока "+oneMilk+" г.");
+        short milkGrams=(short) (oneMilk+oneMilk);
+        System.out.println("Все молоко в граммах = "+milkGrams+" г.");
+        byte iceСream=2;
+        System.out.println("Мороженное в брикетах "+iceСream+" шт");
+        short weightIceCream=100;
+        System.out.println("Вес одного брикета в граммах = "+weightIceCream+" г.");
+        short iceCreamGrams=(short) (iceСream*weightIceCream);
+        System.out.println("Все мороженное в граммах = "+iceCreamGrams+" г.)");
+        byte eggs = 4;
+        System.out.println("Яйца "+eggs+" шт");
+        short oneEggs = 70;
+        System.out.println("Вес одного яйца в граммах = "+oneEggs+ " г.");
+        short eggsGrams=(short) (eggs*oneEggs);
+        System.out.println("Все яйца в граммах = "+eggsGrams+ " г.");
+        float productWeight=(bananasGrams+milkGrams+iceCreamGrams+eggsGrams);
+        System.out.println("Вес всех продуктов в граммах ="+productWeight+" г.");
+        float convection = productWeight/1000L;
+        System.out.println("Вес всех продуктов в килограммах = "+convection+" кг");
 
     }
 }
