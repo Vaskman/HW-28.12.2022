@@ -155,15 +155,15 @@ public class Main {
         System.out.println("Один килограм это "+oneKg+" г.");
         short weightG=(short) (oneKg*weightKg);
         System.out.println("Скинуть вес на "+weightG+" г");
-        float oneDay250= 250;
+        short oneDay250= 250;
         System.out.println("Диета на "+oneDay250+" г. в день");
-        float oneDay500=500;
+        short oneDay500=500;
         System.out.println("Диета на "+oneDay500+" г. в день");
-        float day250= (weightG/oneDay250);
+        int day250= (weightG/oneDay250);
         System.out.println("Для диеты "+oneDay250+"г. потребуется "+day250+ " дней");
-        float day500=(weightG/oneDay500);
+        int day500=(weightG/oneDay500);
         System.out.println("Для диеты "+oneDay500+"г. потребуется "+day500+ " дней");
-        float average = ((day250+day500)/2);
-        System.out.println(average);
+        int average = ((day250+day500)/2);
+        System.out.println("Для того что бы похудеть на "+weightKg+" кг в среднем потребуется "+average+" день");
     }
 }
