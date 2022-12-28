@@ -7,6 +7,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
 
     }
 
@@ -145,5 +146,24 @@ public class Main {
         float convection = productWeight/1000L;
         System.out.println("Вес всех продуктов в килограммах = "+convection+" кг");
 
+    }
+    public static void task7() {
+        System.out.println("ЗАДАЧА №7");
+        byte weightKg=7;
+        System.out.println("Скинуть вес на "+weightKg+" кг");
+        short oneKg=1000;
+        System.out.println("Один килограм это "+oneKg+" г.");
+        short weightG=(short) (oneKg*weightKg);
+        System.out.println("Скинуть вес на "+weightG+" г");
+        float oneDay250= 250;
+        System.out.println("Диета на "+oneDay250+" г. в день");
+        float oneDay500=500;
+        System.out.println("Диета на "+oneDay500+" г. в день");
+        float day250= (weightG/oneDay250);
+        System.out.println("Для диеты "+oneDay250+"г. потребуется "+day250+ " дней");
+        float day500=(weightG/oneDay500);
+        System.out.println("Для диеты "+oneDay500+"г. потребуется "+day500+ " дней");
+        float average = ((day250+day500)/2);
+        System.out.println(average);
     }
 }
