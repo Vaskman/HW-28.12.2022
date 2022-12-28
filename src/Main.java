@@ -8,6 +8,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
 
     }
 
@@ -165,5 +166,51 @@ public class Main {
         System.out.println("Для диеты "+oneDay500+"г. потребуется "+day500+ " дней");
         int average = ((day250+day500)/2);
         System.out.println("Для того что бы похудеть на "+weightKg+" кг в среднем потребуется "+average+" день");
+    }
+    public static void task8() {
+        System.out.println("ЗАДАЧА №8");
+        int nameMasha = 67760;
+        System.out.println("Текущая зарплата Марии в месяц = "+nameMasha+" р.");
+        int nameDenis = 83690;
+        System.out.println("Текущая зарплата Денис в месяц = "+nameDenis+" р.");
+        int nameKristina = 76230;
+        System.out.println("Текущая зарплата Кристина в месяц = "+nameKristina+" р.");
+        int year=12;
+        System.out.println("В году "+year+ " месяцев");
+        int yearMasha = (nameMasha*year);
+        System.out.println("Зараплата Маши в год "+yearMasha+" р.");
+        int yearDenis = (nameDenis*year);
+        System.out.println("Зараплата Денис в год "+yearDenis+" р.");
+        int yearKristina = (nameKristina*year);
+        System.out.println("Зарплата Кристины в год "+yearKristina+" р.");
+        float promotion = 0.10F;
+        System.out.println(promotion);
+        float nameMashaP = (nameMasha*promotion)+nameMasha;
+        System.out.println("Повышение зарплаты Маша на 10% = "+nameMashaP+ " итого р.");
+        float nameDenisP = (nameDenis*promotion)+nameDenis;
+        System.out.println("Повышение зарплаты Денис на 10% = "+nameDenisP+ " итого: р.");
+        float nameKristinaP=(nameKristina*promotion)+nameKristina;
+        System.out.println("Повышение зарплаты Денис на 10% = "+nameKristinaP+ " итого: р.");
+        int yearMashaP=(int)(nameMashaP*year);
+        System.out.println("Зарплата Маши в год после повышения = "+yearMashaP+" р.");
+        int yearDenisP=(int) (nameDenisP*year);
+        System.out.println("Зарплата Дениса в год после повышения = "+yearDenisP+" р.");
+        int yearKristinaP=(int) (nameKristinaP*year);
+        System.out.println("Зарплата Кристины в год после повышения = "+yearKristinaP+" р.");
+        int differenceMasha = (yearMashaP-yearMasha);
+        System.out.println("Разница в зарпалте Маши с прошлым годом "+differenceMasha+" р.");
+        int differenceDenis = (yearDenisP-yearDenis);
+        System.out.println("Разница в зарпалте Дениса с прошлым годом "+differenceDenis+" р.");
+        int differenceKristina= (yearKristinaP-yearKristina);
+        System.out.println("Разница в зарпалте Кристины с прошлым годом "+differenceKristina+" р.");
+        System.out.println("Маша теперь получает " +nameMashaP+ " рублей. Годовой доход вырос на "+differenceMasha+ " рублей");
+        System.out.println("Денис теперь получает " +nameDenisP+ " рублей. Годовой доход вырос на "+differenceDenis+ " рублей");
+        System.out.println("Кристина теперь получает " +nameKristinaP+ " рублей. Годовой доход вырос на "+differenceKristina+ " рублей");
+
+
+
+
+
+
     }
 }
